@@ -4,6 +4,10 @@ int offset = 0;
 rectMode(CENTER);
 color c = #2176CE;
 
+//uncomment to run each drawing
+
+//checkerboard==============================
+
 //for (int y=0; y<880; y = y + 80) {
 //  for (int x=0; x<880; x = x + 160) {
 //    fill(0);
@@ -16,6 +20,7 @@ color c = #2176CE;
 //  }
 //}
 
+//interlocking circles=======================
 
 //for (int y=0; y<880; y = y + 40) {
 //  for (int x = 0; x<880; x = x + 40) {
@@ -28,6 +33,8 @@ color c = #2176CE;
 //    offset = 0;
 //  }
 //}
+
+//triangles========================================
 
 //for (int y = 0; y < 900; y = y +100) {
 //  for (int x = 0; x<900; x= x + 100) {
@@ -42,40 +49,50 @@ color c = #2176CE;
 //  }
 //}
 
-for (int x = 50; x < width; x = x + 100) {
-  for (int y = 0; y < width; y = y + 100) {
-    for (int l = 20; l < 100; l = l + 60) {
-      noFill();
-      line(x, 0, x, height);
-      line(0, y, width, y);
-      rect(x-offset, y-offset, l, l);
-    }
-    if (offset==0) {
-      offset = 50;
-    } else {
-      offset = 0;
-    }
-  }
-}
 
-//for (int x = 50 ; x < width; x = x + 90) {
+//chinese squares=====================================
+
+//stroke(#FFD500);
+//background(#FF0000);
+//for (int y = 0; y < height; y = y + 80) {
+//  for (int x = 0; x < width; x = x + 160) {
+//    rectMode(CORNER);
+//    noFill();
+//    rect(x+offset - 10, y - 10, 20, 20);
+//    rect(x + offset - 60, y - 60, 120, 120);
+//    line(x+offset, 0, x+offset, height);
+//    line(offset, y, height + offset, y);
+//  }
+//  if (offset==0) {
+//    offset = 80;
+//  } else {
+//    offset = 0;
+//  }
+//}
+
+//coloured circles================================
+
+//background(#ffffff);
+//for (int x = 50; x < width; x = x + 90) {
 //  for (int y = -800; y < height; y = y + 90) {
 //    for (int r = 90; r > 0; r = r - 30) {
+//      rectMode(CENTER);
 //      stroke(255);
 //      strokeWeight(5);
 //      fill(c);
 //      circle(x, x+y, r);
 //    }
-//    if (c == #2176CE){
+//    if (c == #2176CE) {
 //      c = #4195ED;
-//    }else if(c == #4195ED){
+//    } else if (c == #4195ED) {
 //      c=#D6EAFF;
-//    }else if(c == #D6EAFF){
+//    } else if (c == #D6EAFF) {
 //      c = #2176CE;
 //    }
 //  }
 //}
 
+//scale circle=======================
 
 //for (int x = 0; x < 850; x = x + 40) {
 //  for (int y = 50; y < 850; y = y + 90) {
